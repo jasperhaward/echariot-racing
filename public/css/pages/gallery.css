@@ -1,0 +1,12 @@
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--colour-navy);
+}
+
+.gallery-images img {
+    max-height: 180px;
+}

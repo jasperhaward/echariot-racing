@@ -1,0 +1,10 @@
+.carousel {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.carousel img {
+    position: absolute;
+}

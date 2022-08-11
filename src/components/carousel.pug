@@ -1,0 +1,7 @@
+mixin carousel(...images)
+    div.carousel-container
+        div.carousel
+            each image in images
+                img(src=image)
+        button.next NEXT
+        button.previous PREV

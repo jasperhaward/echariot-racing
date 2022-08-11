@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--nav-height);
+    border-top: var(--border-white);
+    backdrop-filter: var(--nav-backdrop-filter);
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+footer a svg {
+    fill: var(--colour-white);
+    transition: fill var(--transition-duration-medium) ease;
+}
+
+footer a svg:hover {
+    fill: var(--colour-navy);
+}

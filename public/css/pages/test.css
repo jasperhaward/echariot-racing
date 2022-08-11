@@ -1,0 +1,91 @@
+section.main img {
+    display: block;
+    width: 100%;
+}
+
+section.main .jumbo {
+    padding: 20px;
+    background-color: var(--colour-navy);
+    border-top: 2px solid var(--colour-gold);
+}
+
+section.main .jumbo h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--colour-gold);
+    font-size: var(--font-size-xxl);
+    line-height: var(--font-size-xxl);
+}
+
+section.main .jumbo h1 span {
+    margin-left: 10px;
+    color: var(--colour-white);
+    font-weight: normal;
+}
+
+section.main .jumbo .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 15px 0;
+}
+
+section.main .jumbo .description h2 {
+    margin: 0;
+    font-size: var(--font-size-md);
+    font-weight: normal;
+    line-height: var(--font-size-md);
+    color: var(--colour-white);
+}
+
+section.main .jumbo .description span {
+    width: 30px;
+    height: 1px;
+    background-color: var(--colour-white);
+}
+
+section.main .jumbo a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: min-content;
+    white-space: nowrap;
+    padding: 10px 15px;
+    color: var(--colour-navy);
+    background-color: var(--colour-white);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+    transition: all var(--transition-duration-medium) ease;
+}
+
+section.main .jumbo a:hover {
+    color: var(--colour-white);
+    background-color: var(--colour-gold);
+}
+
+.carousel {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+.carousel img {
+    max-height: 250px;
+}
+
+.events {
+    background-color: var(--colour-gold);
+    border-top: 2px solid var(--colour-navy);
+}
+
+.events h2 {
+    margin: 0;
+    padding: 20px;
+    color: var(--colour-white);
+    font-size: var(--font-size-xl);
+    font-weight: normal;
+}

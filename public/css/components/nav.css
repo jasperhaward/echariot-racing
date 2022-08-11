@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--nav-height);
+    background-color: var(--colour-navy);
+    border-bottom: 2px solid var(--colour-gold);
+}
+
+nav a {
+    margin: 0 75px;
+    text-decoration: none;
+    transition: color var(--transition-duration-medium) ease;
+    font-size: var(--font-size-lg);
+    color: var(--colour-white);
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--colour-gold);
+}
+
+/* nav a.active {
+    filter: none;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+} */

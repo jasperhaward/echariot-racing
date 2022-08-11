@@ -1,0 +1,27 @@
+extends ../components/index
+include ../components/nav
+include ../components/footer
+
+block layout
+    +nav
+    section.main
+        img(src=backgroundImage)
+        div.jumbo
+            h1 eCHARIOT
+                span RACING
+            div.description
+                span
+                h2 STAG, HEN & TEAM PARTIES - CORPORATE EVENTS
+                span 
+            a(href="#book-now") BOOK NOW
+        div.carousel
+            for image of galleryImages 
+                img(src=image)
+        div(id="events", class="events")
+            h2 EVENTS
+            div.event
+                img(src="/images/racing/BC_Image07.jpg")
+                h3 
+
+
+
