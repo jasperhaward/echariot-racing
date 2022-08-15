@@ -7,7 +7,7 @@ import path from "path";
 import fs from "fs";
 
 const app = express();
-const port = 3001;
+const port = parseInt(process.env.PORT);
 
 app.set("views", path.resolve("./src/views"));
 app.set("view engine", "pug");
