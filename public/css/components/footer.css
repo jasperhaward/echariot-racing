@@ -1,23 +1,22 @@
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--nav-height);
-    border-top: var(--border-white);
-    backdrop-filter: var(--nav-backdrop-filter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  background-color: var(--colour-navy);
 }
 
 footer a {
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
 }
 
 footer a svg {
-    fill: var(--colour-white);
-    transition: fill var(--transition-duration-medium) ease;
+  fill: var(--colour-white);
+  transition: fill var(--transition-duration-medium) ease;
 }
 
 footer a svg:hover {
-    fill: var(--colour-navy);
+  fill: var(--colour-gold);
 }

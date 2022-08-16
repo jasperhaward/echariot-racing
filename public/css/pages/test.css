@@ -1,91 +1,249 @@
 section.main img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 section.main .jumbo {
-    padding: 20px;
-    background-color: var(--colour-navy);
-    border-top: 2px solid var(--colour-gold);
+  padding: 20px;
+  background-color: var(--colour-navy);
+  border-top: 2px solid var(--colour-gold);
+  border-bottom: 2px solid var(--colour-gold);
 }
 
 section.main .jumbo h1 {
-    margin: 0;
-    text-align: center;
-    color: var(--colour-gold);
-    font-size: var(--font-size-xxl);
-    line-height: var(--font-size-xxl);
+  margin: 0;
+  text-align: center;
+  color: var(--colour-gold);
+  font-size: var(--font-size-xxxl);
+  line-height: var(--font-size-xxxl);
 }
 
 section.main .jumbo h1 span {
-    margin-left: 10px;
-    color: var(--colour-white);
-    font-weight: normal;
+  margin-left: 10px;
+  color: var(--colour-white);
+  font-weight: normal;
 }
 
 section.main .jumbo .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 15px 0;
 }
 
 section.main .jumbo .description h2 {
-    margin: 0;
-    font-size: var(--font-size-md);
-    font-weight: normal;
-    line-height: var(--font-size-md);
-    color: var(--colour-white);
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: normal;
+  line-height: var(--font-size-md);
+  color: var(--colour-white);
 }
 
 section.main .jumbo .description span {
-    width: 30px;
-    height: 1px;
-    background-color: var(--colour-white);
+  width: 30px;
+  height: 1px;
+  background-color: var(--colour-white);
 }
 
 section.main .jumbo a {
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: min-content;
-    white-space: nowrap;
-    padding: 10px 15px;
-    color: var(--colour-navy);
-    background-color: var(--colour-white);
-    font-weight: bold;
-    text-decoration: none;
-    font-size: var(--font-size-lg);
-    transition: all var(--transition-duration-medium) ease;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: min-content;
+  white-space: nowrap;
+  padding: 10px 15px;
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  transition: all var(--transition-duration-medium) ease;
 }
 
 section.main .jumbo a:hover {
-    color: var(--colour-white);
-    background-color: var(--colour-gold);
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
 }
 
-.carousel {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px;
-    overflow-x: scroll;
+#about-container {
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
+  padding-bottom: 20px;
 }
 
-.carousel img {
-    max-height: 250px;
+#about-container h2 {
+  margin: 0;
+  padding: 20px;
+  font-size: var(--font-size-xxl);
+  font-weight: normal;
+  text-align: center;
+}
+
+#about-container p {
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+#about-container p:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+#gallery-container h2 {
+  margin: 0;
+  padding-top: 20px;
+  color: var(--colour-navy);
+  font-size: var(--font-size-xxl);
+  text-align: center;
+  font-weight: normal;
+}
+
+#gallery-container video {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 700px;
+}
+
+#gallery-container .carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+#gallery-container .carousel img {
+  max-height: 400px;
+}
+
+#events-container {
+  background-color: var(--colour-gold);
+  text-align: center;
+}
+
+#events-container h2 {
+  margin: 0;
+  padding-top: 20px;
+  color: var(--colour-white);
+  font-size: var(--font-size-xxl);
+  font-weight: normal;
 }
 
 .events {
-    background-color: var(--colour-gold);
-    border-top: 2px solid var(--colour-navy);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-.events h2 {
-    margin: 0;
-    padding: 20px;
-    color: var(--colour-white);
-    font-size: var(--font-size-xl);
-    font-weight: normal;
+.events .event {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: var(--colour-navy);
+}
+
+.events .event h3 {
+  margin: 0;
+  color: var(--colour-gold);
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+}
+
+.events .event .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: var(--colour-white);
+  font-size: var(--font-size-md);
+}
+
+.events .event .date svg {
+  margin-right: 4px;
+  fill: var(--colour-white);
+}
+
+.events .event .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colour-white);
+  font-size: var(--font-size-md);
+}
+
+.events .event .location svg {
+  margin-right: 4px;
+  fill: var(--colour-white);
+}
+
+.events .event .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.events .event a {
+  margin: 20px 10px 10px 10px;
+  padding: 8px 16px;
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+  font-size: var(--font-size-md);
+  font-weight: normal;
+  text-decoration: none;
+  transition: all var(--transition-duration-medium) ease;
+}
+
+.events .event a:hover {
+  color: var(--colour-white);
+  background-color: var(--colour-navy);
+}
+
+.events .event a.gold {
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
+}
+
+.events .event a.gold:hover {
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+}
+
+#book-container {
+  color: var(--colour-white);
+  background-color: var(--colour-navy);
+}
+
+#book-container h2 {
+  margin: 0;
+  padding: 20px;
+  font-size: var(--font-size-xxl);
+  font-weight: normal;
+  text-align: center;
+}
+
+#book-container p {
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+#book-container a {
+  display: block;
+  width: min-content;
+  white-space: nowrap;
+  margin: 20px auto;
+  padding: 15px 30px;
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+  font-size: var(--font-size-lg);
+  font-weight: normal;
+  text-decoration: none;
+  transition: all var(--transition-duration-medium) ease;
+}
+
+#book-container a:hover {
+  cursor: pointer;
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
 }

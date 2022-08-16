@@ -1,27 +1,27 @@
 :root {
-    --nav-height: 50px;
-    --nav-backdrop-filter: blur(1px) grayscale(0.05);
+  --nav-height: 50px;
 
-    --border-white: 2px solid var(--colour-white);
+  --border-white: 2px solid var(--colour-white);
 
-    --transition-duration-medium: 0.4s;
-    --transition-duration-long: 0.8s;
+  --transition-duration-medium: 0.4s;
+  --transition-duration-long: 0.8s;
 
-    --colour-darkened-background: rgba(0, 0, 0, 0.2);
-    --colour-white: rgb(255, 255, 255);
-    --colour-navy: rgba(49, 61, 71, 1);
-    --colour-navy-light: rgba(49, 61, 71, 0.5);
-    --colour-gold: rgba(172, 133, 3, 1);
-    --colour-grey-light: rgb(216, 216, 216);
+  --colour-darkened-background: rgba(0, 0, 0, 0.2);
+  --colour-white: rgb(255, 255, 255);
+  --colour-navy: rgba(49, 61, 71, 1);
+  --colour-navy-light: rgba(49, 61, 71, 0.5);
+  --colour-gold: rgba(172, 133, 3, 1);
+  --colour-grey-light: rgb(216, 216, 216);
 
-    --lighten: 175%;
+  --lighten: 175%;
 
-    --border-radius-md: 5px;
+  --border-radius-md: 5px;
 
-    --font-size-xs: 12px;
-    --font-size-sm: 15px;
-    --font-size-md: 18px;
-    --font-size-lg: 21px;
-    --font-size-xl: 26px;
-    --font-size-xxl: 55px;
+  --font-size-xs: 12px;
+  --font-size-sm: 15px;
+  --font-size-md: 18px;
+  --font-size-lg: 21px;
+  --font-size-xl: 26px;
+  --font-size-xxl: 35px;
+  --font-size-xxxl: 55px;
 }

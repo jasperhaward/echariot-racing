@@ -1,27 +1,52 @@
 extends ../components/index
 include ../components/nav
 include ../components/footer
+include ../components/icon
 
 block layout
     +nav
     section.main
         img(src=backgroundImage)
-        div.jumbo
+        .jumbo
             h1 eCHARIOT
                 span RACING
             div.description
                 span
                 h2 STAG, HEN & TEAM PARTIES - CORPORATE EVENTS
                 span 
-            a(href="#book-now") BOOK NOW
-        div.carousel
-            for image of galleryImages 
-                img(src=image)
-        div(id="events", class="events")
+            a(href="#book-container", role="navlink") BOOK NOW
+        div(id="about-container")
+            h2 WHO WE ARE            
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U
+            p Check out some videos/images below for an idea of what to expect!
+        div(id="gallery-container")
+            h2 GALLERY
+            //video(src="/videos/BC_Video01.mp4", type="video/mp4", controls=true)
+            div.carousel
+                for image of galleryImages 
+                    img(src=image)
+        div(id="events-container")
             h2 EVENTS
-            div.event
-                img(src="/images/racing/BC_Image07.jpg")
-                h3 
+            div(id="events", class="events")
+                each event in events
+                    .event
+                        h3= event.name
+                        div.date
+                            +icon("solid", "calendar-days", 18)
+                            div=event.date
+                        div.location 
+                            +icon("solid", "location-dot", 16)
+                            div=`${event.location.address}, ${event.location.town}, ${event.location.county}`
+                        div.buttons
+                            a(href=event.url, target="_blank") MORE INFO
+                            a(href=event.location.url, target="_blank" class="gold") OPEN IN MAPS
+        div(id="book-container")
+            h2 BOOK NOW
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            a(href="mailto:jasperhaward@gmail.com", target="_blank" ) CONTACT US
+            p Or find us on social media below!
+    +footer
 
 
 
