@@ -1,0 +1,34 @@
+.link {
+  padding: 10px 15px;
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+  font-size: var(--font-size-lg);
+  text-decoration: none;
+  transition: all var(--transition-duration-medium) ease;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
+}
+
+.link.navy {
+  color: var(--colour-white);
+  background-color: var(--colour-navy);
+}
+
+.link.navy:hover {
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+}
+
+.link.gold {
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
+}
+
+.link.gold:hover {
+  color: var(--colour-navy);
+  background-color: var(--colour-white);
+}

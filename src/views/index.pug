@@ -1,0 +1,21 @@
+extends ../components/index
+include ../components/nav
+include ../components/footer
+include ../components/icon
+include ../sections/about
+include ../sections/book
+include ../sections/events
+include ../sections/home
+include ../sections/gallery
+
+block layout
+    +nav
+    +home(homeImage)
+    +about
+    +gallery(images)
+    +events(events)
+    +book(contactEmail)
+    +footer
+
+
+

@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const href = navLink.getAttribute("href");
 
-      document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+      document.querySelector(href).scrollIntoView({
+        behavior: "smooth",
+      });
     };
   }
 });

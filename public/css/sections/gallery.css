@@ -1,0 +1,22 @@
+#gallery h2 {
+  text-align: center;
+  color: var(--colour-navy);
+  margin-bottom: 0;
+}
+
+#gallery video {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 700px;
+}
+
+#gallery .carousel {
+  display: flex;
+  gap: var(--padding-md);
+  padding: var(--padding-md);
+  overflow-x: scroll;
+}
+
+#gallery .carousel img {
+  max-height: 400px;
+}

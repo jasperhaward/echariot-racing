@@ -1,0 +1,24 @@
+mixin events(events)
+    section(id="events")
+        h2 EVENTS
+        div.events-container
+            each event in events
+                div.event
+                    h3=event.name
+                    div.event-details
+                        +icon("solid", "calendar-days", 18)
+                        div=event.date
+                    div.event-details 
+                        +icon("solid", "location-dot", 16)
+                        div=`${event.location.address}, ${event.location.town}, ${event.location.county}`
+                    div.event-links
+                        a(
+                            class="link", 
+                            href=event.url, 
+                            target="_blank"
+                        ) MORE INFO
+                        a(
+                            class="link gold", 
+                            href=event.location.url, 
+                            target="_blank"
+                        ) OPEN IN MAPS

@@ -1,0 +1,7 @@
+mixin gallery(images)
+    section(id="gallery")
+        h2 GALLERY
+        //video(src="/videos/BC_Video01.mp4", type="video/mp4", controls=true)
+        div.carousel
+            for image of images 
+                img(src=image, alt=image)
