@@ -7,6 +7,7 @@ nav {
   min-height: var(--nav-height);
   background-color: var(--colour-navy);
   border-bottom: var(--border-gold);
+  box-sizing: border-box;
 }
 
 nav a {
