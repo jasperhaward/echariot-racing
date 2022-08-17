@@ -3,7 +3,7 @@ mixin events(events)
         h2 EVENTS
         div.events-container
             each event in events
-                div.event
+                article
                     h3=event.name
                     div.event-details
                         +icon("solid", "calendar-days", 18)

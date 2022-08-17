@@ -1,7 +1,9 @@
-#gallery h2 {
+#gallery {
   text-align: center;
+}
+
+#gallery h2 {
   color: var(--colour-navy);
-  margin-bottom: 0;
 }
 
 #gallery video {
@@ -13,7 +15,7 @@
 #gallery .carousel {
   display: flex;
   gap: var(--padding-md);
-  padding: var(--padding-md);
+  padding-top: var(--padding-md);
   overflow-x: scroll;
 }
 

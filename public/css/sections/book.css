@@ -5,11 +5,11 @@
   color: var(--colour-white);
   background-color: var(--colour-navy);
   text-align: center;
+  padding-bottom: 0;
 }
 
-#book p {
-  margin: 0;
-  max-width: 60%;
+#book p:last-of-type {
+  padding: 0;
 }
 
 #book a {

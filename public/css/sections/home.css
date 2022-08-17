@@ -1,4 +1,6 @@
 #home {
+  padding: 0;
+  text-align: center;
   background-color: var(--colour-navy);
 }
 
@@ -11,13 +13,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--padding-md);
   border-top: var(--border-gold);
 }
 
 #home .jumbo h1 {
-  margin-bottom: 0;
   color: var(--colour-gold);
-  text-align: center;
   font-weight: bold;
 }
 
@@ -31,12 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: var(--padding-xs);
+  gap: var(--padding-xs);
+  padding-bottom: var(--padding-xs);
 }
 
 #home .jumbo .description h2 {
-  margin: 0;
   color: var(--colour-white);
   font-size: var(--font-size-md);
 }
@@ -45,8 +45,4 @@
   width: 30px;
   height: 1px;
   background-color: var(--colour-white);
-}
-
-#home .jumbo a {
-  margin-bottom: var(--padding-md);
 }

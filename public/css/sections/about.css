@@ -3,8 +3,3 @@
   background-color: var(--colour-gold);
   text-align: center;
 }
-
-#about p {
-  margin: 0 auto var(--padding-md) auto;
-  max-width: 60%;
-}

@@ -1,23 +1,14 @@
-html,
 body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   font-family: "Gill Sans Nova Light";
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   box-sizing: border-box;
 }
 
 h1,
-h2 {
+h2,
+h3 {
+  margin: 0;
   font-weight: normal;
-  margin: var(--padding-md) 0;
 }
 
 h1 {
@@ -31,7 +22,16 @@ h2 {
 }
 
 h3 {
-  margin: var(--padding-sm);
   font-size: var(--font-size-xl);
   line-height: var(--font-size-xl);
+}
+
+section {
+  padding: var(--padding-md);
+}
+
+p {
+  margin: auto;
+  max-width: 60%;
+  padding-top: var(--padding-md);
 }
