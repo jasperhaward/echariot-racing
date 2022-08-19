@@ -20,12 +20,14 @@
 #home .jumbo h1 {
   color: var(--colour-gold);
   font-weight: bold;
+  font-family: "Brandon Grotesque Bold";
 }
 
 #home .jumbo h1 span {
   margin-left: 10px;
   color: var(--colour-white);
   font-weight: normal;
+  font-family: "Gill Sans Nova Light";
 }
 
 #home .jumbo .description {
