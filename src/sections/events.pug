@@ -1,24 +1,80 @@
 mixin events(events)
     section(id="events")
         h2 EVENTS
-        div.events-container
-            each event in events
-                article
-                    h3=event.name
-                    div.event-details
-                        +icon("solid", "calendar-days", 18)
-                        div=event.date
-                    div.event-details 
-                        +icon("solid", "location-dot", 16)
-                        div=`${event.location.address}, ${event.location.town}, ${event.location.county}`
-                    div.event-links
-                        a(
-                            class="link", 
-                            href=event.url, 
-                            target="_blank"
-                        ) MORE INFO
-                        a(
-                            class="link gold", 
-                            href=event.location.url, 
-                            target="_blank"
-                        ) OPEN IN MAPS
+        table(border="0", cellspacing="0", cellpadding="0")
+            tbody
+                tr
+                    td.month August
+                    td
+                        div.indicator 
+                            div.line
+                            div.circle 
+                            div.line
+                    td 
+                        div.event 
+                            h3 Cow Pie 
+                            p 1st - 3rd August
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                        div.event 
+                            h3 Glastonbury
+                            p 5th - 9th August
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                tr 
+                    td.month September
+                    td
+                        div.indicator 
+                            div.line
+                            div.circle 
+                            div.line
+                    td
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                        div.event 
+                            h3 Surrey Country Fair
+                            p 1st - 3rd September
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                        div.event 
+                            h3 Glastonbury
+                            p 15th - 18th September
+                tr
+                    td
+                    td
+                        div.indicator 
+                            div.line
+                    td
+                tr 
+                    td.month October
+                    td
+                        div.indicator 
+                            div.line
+                            div.circle 
+                            div.line
+                    td
+                        div.event 
+                            h3 Cow Pie 
+                            p 1st - 3rd August

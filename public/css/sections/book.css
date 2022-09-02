@@ -1,17 +1,29 @@
 #book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--colour-white);
-  background-color: var(--colour-navy);
-  text-align: center;
-  padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--colour-white);
+    background-color: var(--colour-gold);
 }
 
-#book p:last-of-type {
-  padding: 0;
+#book h2 {
+    width: 35%;
+}
+
+#book div {
+    width: 65%;
+    padding: 0 var(--padding-percent-md);
+    border-left: var(--border-white);
+    box-sizing: border-box;
 }
 
 #book a {
-  margin: var(--padding-md);
+    display: block;
+    width: fit-content;
+    margin: var(--padding-sm) auto;
+}
+
+#book a:hover {
+    opacity: 1;
+    background-color: var(--colour-navy-light);
 }

@@ -1,5 +1,18 @@
 #about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   color: var(--colour-white);
   background-color: var(--colour-gold);
-  text-align: center;
+}
+
+#about h2 {
+  width: 35%;
+}
+
+#about div {
+  width: 65%;
+  padding: 0 var(--padding-percent-md);
+  border-left: var(--border-white);
+  box-sizing: border-box;
 }

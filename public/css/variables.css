@@ -1,26 +1,33 @@
 :root {
-  --nav-height: 50px;
+    --nav-height: 50px;
 
-  --padding-xs: 5px;
-  --padding-sm: 10px;
-  --padding-md: 20px;
-  --padding-lg: 25px;
+    --padding-xs: 5px;
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 40px;
+    --padding-xl: 60px;
 
-  --border-gold: 2px solid var(--colour-gold);
-  --border-white: 2px solid var(--colour-white);
+    --padding-percent-xs: 2%;
+    --padding-percent-sm: 4%;
+    --padding-percent-md: 5%;
+    --padding-percent-lg: 8%;
+    --padding-percent-xl: 12%;
 
-  --transition-duration-medium: 0.4s;
-  --transition-duration-long: 0.8s;
+    --border-gold: 2px solid var(--colour-gold);
+    --border-white: 2px solid var(--colour-white);
 
-  --colour-white: rgb(255, 255, 255);
-  --colour-navy: rgba(49, 61, 71, 1);
-  --colour-navy-light: rgba(141, 160, 176, 0.5);
-  --colour-gold: rgba(172, 133, 3, 1);
+    --transition-duration-medium: 0.4s;
+    --transition-duration-long: 0.8s;
 
-  --font-size-sm: 15px;
-  --font-size-md: 18px;
-  --font-size-lg: 21px;
-  --font-size-xl: 26px;
-  --font-size-xxl: 35px;
-  --font-size-xxxl: 55px;
+    --colour-white: rgb(255, 255, 255);
+    --colour-navy: rgba(49, 61, 71, 1);
+    --colour-navy-light: rgb(73, 91, 105);
+    --colour-gold: rgba(172, 133, 3, 1);
+
+    --font-size-sm: 15px;
+    --font-size-md: 18px;
+    --font-size-lg: 21px;
+    --font-size-xl: 26px;
+    --font-size-xxl: 45px;
+    --font-size-xxxl: 55px;
 }

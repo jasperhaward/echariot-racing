@@ -27,11 +27,14 @@ h3 {
 }
 
 section {
-  padding: var(--padding-md);
+  padding: var(--padding-percent-sm) var(--padding-percent-md);
+  text-align: center;
 }
 
 p {
-  margin: auto;
-  max-width: 60%;
-  padding-top: var(--padding-md);
+  margin: 0;
+}
+
+p:not(:last-child) {
+  padding-bottom: var(--padding-sm);
 }

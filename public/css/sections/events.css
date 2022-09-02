@@ -1,48 +1,93 @@
 #events {
-  color: var(--colour-white);
-  background-color: var(--colour-gold);
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--colour-white);
+    background-color: var(--colour-navy);
 }
 
-.events-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--padding-md);
-  padding-top: var(--padding-md);
+#events h2 {
+    width: 35%;
 }
 
-.events-container article {
-  flex-grow: 1;
-  padding: var(--padding-md);
-  background-color: var(--colour-navy);
+#events table {
+    width: 65%;
+    padding: 0 var(--padding-percent-md);
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-left: var(--border-white);
 }
 
-.events-container article h3 {
-  color: var(--colour-gold);
-  text-transform: uppercase;
+/* See https://stackoverflow.com/questions/3215553/make-a-div-fill-an-entire-table-cell 
+   required for below indicator
+*/
+#events table tr {
+    height: 1px;
+    border: 0;
 }
 
-.events-container article .event-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: var(--padding-sm);
-  color: var(--colour-white);
-  font-size: var(--font-size-md);
+#events table tr td {
+    height: inherit;
+    border: 0;
 }
 
-.events-container article .event-details svg {
-  margin-right: 4px;
-  fill: var(--colour-white);
+#events table td.month {
+    text-align: right;
+    font-size: var(--font-size-xl);
+    padding-bottom: 8px;
 }
 
-.events-container article .event-links {
-  display: flex;
-  justify-content: space-evenly;
+#events table td .indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
-.events-container article .event-links a:hover {
-  color: var(--colour-white);
-  background-color: var(--colour-navy-light);
+#events table td .indicator .line {
+    flex-grow: 1;
+    width: 2px;
+    background-color: var(--colour-white);
+}
+
+/* Hide white line above/below circle when first/last row respectively */
+#events table tr:first-child .line:first-child,
+#events table tr:last-child .line:last-child {
+    background-color: transparent;
+}
+
+/* Set min height on line only rows */
+#events table td .indicator .line:only-child {
+    min-height: 50px;
+}
+
+#events table td .indicator .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--colour-white);
+}
+
+#events table td .event {
+    width: fit-content;
+    margin: var(--padding-md);
+    padding: var(--padding-md) var(--padding-md) var(--padding-md)
+        calc(var(--padding-xl) + var(--padding-sm));
+    background-color: var(--colour-gold);
+    clip-path: polygon(
+        100% 0,
+        var(--padding-xl) 0,
+        0 50%,
+        var(--padding-xl) 100%,
+        100% 100%
+    );
+}
+
+#events table td .event h3 {
+    color: var(--colour-navy);
+}
+
+#events table td .event p {
+    color: var(--colour-white);
+    font-size: var(--font-size-lg);
 }
